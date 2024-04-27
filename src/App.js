@@ -7,13 +7,13 @@ function App() {
   const[theme, setTheme] = useState('light');
   return (
     <div 
-    className={`w-screen min-h-screen transition-all ${theme=='light' ? 'bg-[#e8faff]' : 'bg-[#00141a]'}`}
+    className={`flex flex-col justify-between w-screen min-h-screen transition-all ${theme==='light' ? 'bg-[#ff6961]' : 'bg-[#00141a]'}`}
     >
       <Header theme={theme} setTheme={setTheme}/>
       <Body theme={theme} setTheme={setTheme}/>
       <ButtonsContainer theme={theme} setTheme={setTheme}/>
     </div>
-  );
+  ); 
 }
 
 export default App;
